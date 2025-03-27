@@ -1,37 +1,60 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { TeamCard } from './TeamCard';
+import { motion } from "framer-motion";
+import { TeamCard } from "./TeamCard";
 
 export const Team = () => {
   const teamMembers = [
     {
       name: "John Doe",
       role: "Lead Developer",
-      description: "Game architecture and core systems development. CS student with a passion for game development.",
+      description:
+        "Game architecture and core systems development. CS student with a passion for game development.",
       initials: "JD",
       gradientFrom: "blue-400",
       gradientTo: "blue-600",
-      delay: 0.2
+      delay: 0.2,
     },
     {
       name: "Alice Smith",
       role: "3D Artist",
-      description: "Creating detailed 3D models of campus buildings. Visual Arts student with expertise in 3D modeling.",
+      description:
+        "Creating detailed 3D models of campus buildings. Visual Arts student with expertise in 3D modeling.",
       initials: "AS",
       gradientFrom: "yellow-400",
       gradientTo: "yellow-600",
-      delay: 0.4
+      delay: 0.3,
     },
     {
       name: "Mike Johnson",
       role: "UI/UX Designer",
-      description: "Creating intuitive user interfaces and experiences. HCI specialist and front-end developer.",
+      description:
+        "Creating intuitive user interfaces and experiences. HCI specialist and front-end developer.",
       initials: "MJ",
       gradientFrom: "purple-400",
       gradientTo: "purple-600",
-      delay: 0.6
-    }
+      delay: 0.4,
+    },
+    {
+      name: "Sarah Chen",
+      role: "Backend Engineer",
+      description:
+        "Developing server infrastructure and API integrations. Computing Science student specializing in distributed systems.",
+      initials: "SC",
+      gradientFrom: "green-400",
+      gradientTo: "green-600",
+      delay: 0.5,
+    },
+    {
+      name: "Tom Wilson",
+      role: "Game Designer",
+      description:
+        "Crafting engaging gameplay mechanics and interactive experiences. Game Development student with UX research background.",
+      initials: "TW",
+      gradientFrom: "red-400",
+      gradientTo: "red-600",
+      delay: 0.6,
+    },
   ];
 
   return (
@@ -45,14 +68,16 @@ export const Team = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl font-bold mb-4">Meet Our Team</h2>
+          <h2 className="font-display text-4xl font-bold mb-4">
+            Meet Our Team
+          </h2>
           <p className="text-gray-300 max-w-2xl mx-auto font-sans">
-            A diverse group of passionate students and developers working together to 
-            revolutionize the campus tour experience.
+            A diverse group of passionate students and developers working
+            together to revolutionize the campus tour experience.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {teamMembers.map((member) => (
             <TeamCard key={member.initials} {...member} />
           ))}
@@ -72,7 +97,7 @@ export const Team = () => {
           </div>
           <div className="text-center">
             <div className="font-display text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200 mb-2">
-              15+
+              5
             </div>
             <p className="text-gray-400 font-sans">Team Members</p>
           </div>

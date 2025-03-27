@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { BackgroundEffects } from '@/components/BackgroundEffects';
-import { Navigation } from '@/components/Navigation';
-import { Hero } from '@/components/Hero';
-import { Team } from '@/components/Team';
-import { Footer } from '@/components/Footer';
+import { BackgroundEffects } from "@/components/BackgroundEffects";
+import { Footer } from "@/components/Footer";
+import { Hero } from "@/components/Hero";
+import { Navigation } from "@/components/Navigation";
+import { Team } from "@/components/Team";
 
 export default function Home() {
   return (

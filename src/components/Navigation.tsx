@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export const Navigation = () => {
   return (
@@ -19,8 +19,12 @@ export const Navigation = () => {
           </span>
         </div>
         <div className="hidden md:flex space-x-8">
-          {['Features', 'Gameplay', 'About', 'Team'].map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} className="relative group">
+          {["Features", "Gameplay", "About", "Team"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="relative group"
+            >
               <span className="text-gray-300 hover:text-white transition-colors">
                 {item}
               </span>
