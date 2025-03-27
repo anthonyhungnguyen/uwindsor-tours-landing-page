@@ -5,10 +5,13 @@ import { BackgroundEffects } from "@/components/BackgroundEffects";
 import { FAQ } from "@/components/FAQ";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
+import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
+import { HowItWorks } from "@/components/HowItWorks";
 import { Navigation } from "@/components/Navigation";
 import { Survey } from "@/components/Survey";
 import { Team } from "@/components/Team";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -17,7 +20,10 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Features />
+      <HowItWorks />
+      <Gallery />
       <About />
+      <Testimonials />
       <Team />
       <FAQ />
       <Survey />
