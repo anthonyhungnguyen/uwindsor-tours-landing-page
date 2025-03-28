@@ -18,15 +18,17 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white">
       <BackgroundEffects />
       <Navigation />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Gallery />
-      <About />
-      <Testimonials />
-      <Team />
-      <FAQ />
-      <Survey />
+      <main id="home">
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Gallery />
+        <About />
+        <Team />
+        <Testimonials />
+        <FAQ />
+        <Survey />
+      </main>
       <Footer />
     </div>
   );
