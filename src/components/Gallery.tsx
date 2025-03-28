@@ -10,55 +10,52 @@ export const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Dillon Hall",
-      thumbnail: "https://placehold.co/600x400/2a4d69/ffffff?text=Dillon+Hall",
-      fullImage: "https://placehold.co/1200x800/2a4d69/ffffff?text=Dillon+Hall",
+      title: "",
+      thumbnail: "/gallery/img1.png",
+      fullImage: "/gallery/img1.png",
       description:
-        "Historic Dillon Hall featuring Gothic architecture and modern classrooms.",
+        "Welcome Message for the Building",
     },
     {
       id: 2,
-      title: "Leddy Library",
+      title: "",
       thumbnail:
-        "https://placehold.co/600x400/4b86b4/ffffff?text=Leddy+Library",
+        "/gallery/img2.png",
       fullImage:
-        "https://placehold.co/1200x800/4b86b4/ffffff?text=Leddy+Library",
+        "/gallery/img2.png",
       description:
-        "Four floors of study spaces, resources, and research facilities.",
+        "List of available programs",
     },
     {
       id: 3,
-      title: "Erie Hall",
-      thumbnail: "https://placehold.co/600x400/2a4d69/ffffff?text=Erie+Hall",
-      fullImage: "https://placehold.co/1200x800/2a4d69/ffffff?text=Erie+Hall",
+      title: "",
+      thumbnail: "/gallery/img3.png",
+      fullImage: "/gallery/img3.png",
       description:
-        "Home to the Faculty of Human Kinetics and athletic facilities.",
+        "Program Feature",
     },
     {
       id: 4,
-      title: "CAW Student Centre",
-      thumbnail:
-        "https://placehold.co/600x400/4b86b4/ffffff?text=CAW+Student+Centre",
-      fullImage:
-        "https://placehold.co/1200x800/4b86b4/ffffff?text=CAW+Student+Centre",
+      title: "",
+      thumbnail: "/gallery/img5.png",
+      fullImage: "/gallery/img5.png",
       description:
-        "The hub of student life featuring dining, study, and event spaces.",
+        "",
     },
     {
       id: 5,
-      title: "Toldo Health Education Centre",
-      thumbnail: "https://placehold.co/600x400/2a4d69/ffffff?text=Toldo+Centre",
-      fullImage:
-        "https://placehold.co/1200x800/2a4d69/ffffff?text=Toldo+Centre",
+      title: "",
+      thumbnail: "/gallery/img6.png",
+      fullImage: "/gallery/img6.png",
       description:
-        "Modern facilities for Nursing and other health science programs.",
+        "Quiz Game",
     },
     {
       id: 6,
-      title: "Essex Hall",
-      thumbnail: "https://placehold.co/600x400/4b86b4/ffffff?text=Essex+Hall",
-      fullImage: "https://placehold.co/1200x800/4b86b4/ffffff?text=Essex+Hall",
-      description: "Science and Engineering laboratories and lecture halls.",
+      title: "",
+      thumbnail: "/gallery/img4.png",
+      fullImage: "/gallery/img4.png",
+      description: "Completion of Quiz",
     },
   ];
 
