@@ -102,7 +102,7 @@ export const Testimonials = () => {
                 className="text-center"
               >
                 <blockquote className="text-xl md:text-2xl italic mb-6 text-gray-200">
-                  "{testimonials[activeIndex].quote}"
+                  &quot;{testimonials[activeIndex].quote}&quot;
                 </blockquote>
                 <cite className="not-italic">
                   <p className="text-lg font-semibold text-white">
