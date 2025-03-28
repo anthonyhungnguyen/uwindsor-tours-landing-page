@@ -72,9 +72,11 @@ export const Hero = () => {
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden border border-white/10 backdrop-blur-sm bg-white/5">
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-blue-900/50"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-lg text-gray-300">
-                  Interactive Preview Coming Soon
-                </p>
+                <img
+                  src="/hipanel.jpg"
+                  alt="Preview"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute top-4 right-4 w-20 h-20 border-t-2 border-r-2 border-white/20"></div>
               <div className="absolute bottom-4 left-4 w-20 h-20 border-b-2 border-l-2 border-white/20"></div>
