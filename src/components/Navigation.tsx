@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,10 +27,10 @@ export const Navigation = () => {
       } else {
         setScrolled(false);
       }
-      
+
       // Determine active section based on scroll position
-      const sections = navItems.map(item => item.id);
-      const current = sections.find(section => {
+      const sections = navItems.map((item) => item.id);
+      const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -38,7 +38,7 @@ export const Navigation = () => {
         }
         return false;
       });
-      
+
       if (current) {
         setActiveSection(current);
       }
@@ -53,7 +53,9 @@ export const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
-      className={`backdrop-blur-md ${scrolled ? 'bg-gray-900/80' : 'bg-transparent'} sticky top-0 z-50 border-b border-white/10 transition-all duration-300`}
+      className={`backdrop-blur-md ${
+        scrolled ? "bg-gray-900/80" : "bg-transparent"
+      } sticky top-0 z-50 border-b border-white/10 transition-all duration-300`}
     >
       <div className="container mx-auto flex justify-between items-center p-4">
         <motion.a
@@ -69,7 +71,7 @@ export const Navigation = () => {
             UWindsor Tours
           </span>
         </motion.a>
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex gap-6">
@@ -78,14 +80,18 @@ export const Navigation = () => {
                 key={item.name}
                 href={item.href}
                 className={`transition-colors relative group ${
-                  activeSection === item.id ? "text-white font-medium" : "text-gray-300 hover:text-white"
+                  activeSection === item.id
+                    ? "text-white font-medium"
+                    : "text-gray-300 hover:text-white"
                 }`}
                 whileHover={{ scale: 1.05 }}
               >
                 {item.name}
-                <span 
+                <span
                   className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 ${
-                    activeSection === item.id ? "w-full" : "w-0 group-hover:w-full"
+                    activeSection === item.id
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                   }`}
                 ></span>
               </motion.a>
@@ -100,7 +106,7 @@ export const Navigation = () => {
             Give Feedback
           </motion.a>
         </div>
-        
+
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
@@ -130,7 +136,7 @@ export const Navigation = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       <motion.div
         initial={{ height: 0, opacity: 0 }}
@@ -148,7 +154,9 @@ export const Navigation = () => {
                 key={item.name}
                 href={item.href}
                 className={`transition-colors py-2 border-b border-white/10 ${
-                  activeSection === item.id ? "text-white font-medium" : "text-gray-300"
+                  activeSection === item.id
+                    ? "text-white font-medium"
+                    : "text-gray-300"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
                 whileHover={{ x: 5 }}
