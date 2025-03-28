@@ -6,51 +6,50 @@ import { TeamCard } from "./TeamCard";
 export const Team = () => {
   const teamMembers = [
     {
-      name: "John Doe",
+      name: "Thieu Chuong",
       role: "Lead Developer",
-      description:
-        "Game architecture and core systems development. CS student with a passion for game development.",
-      initials: "JD",
+      description: "Game architecture and core systems development.",
+      initials: "TC",
       gradientFrom: "blue-400",
       gradientTo: "blue-600",
       delay: 0.2,
     },
     {
-      name: "Alice Smith",
+      name: "Elzaba Babu",
       role: "3D Artist",
       description:
-        "Creating detailed 3D models of campus buildings. Visual Arts student with expertise in 3D modeling.",
-      initials: "AS",
+        "Creating detailed 3D models of campus buildings. Visual Arts with expertise in 3D modeling.",
+      initials: "EB",
       gradientFrom: "yellow-400",
       gradientTo: "yellow-600",
       delay: 0.3,
     },
     {
-      name: "Mike Johnson",
+      name: "Phuc Hung Nguyen",
       role: "UI/UX Designer",
       description:
         "Creating intuitive user interfaces and experiences. HCI specialist and front-end developer.",
-      initials: "MJ",
+      initials: "PN",
       gradientFrom: "purple-400",
       gradientTo: "purple-600",
       delay: 0.4,
     },
     {
-      name: "Sarah Chen",
-      role: "Backend Engineer",
+      name: "Aparna Peesapati",
+      role: "Quality Assurance",
       description:
-        "Developing server infrastructure and API integrations. Computing Science student specializing in distributed systems.",
-      initials: "SC",
+        "Quality Assurance & Testing - Ensures game stability, performance, and security.",
+      initials: "AP",
       gradientFrom: "green-400",
       gradientTo: "green-600",
       delay: 0.5,
     },
     {
-      name: "Tom Wilson",
+      name: "Thang Pham",
       role: "Game Designer",
       description:
-        "Crafting engaging gameplay mechanics and interactive experiences. Game Development student with UX research background.",
-      initials: "TW",
+        "Crafting engaging gameplay mechanics and interactive experiences.",
+      initials: "TP",
       gradientFrom: "red-400",
       gradientTo: "red-600",
       delay: 0.6,

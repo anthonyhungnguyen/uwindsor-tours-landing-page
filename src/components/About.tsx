@@ -54,28 +54,14 @@ export const About = () => {
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-2xl blur opacity-20 animate-pulse"></div>
             <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 aspect-video">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50 mix-blend-overlay"></div>
-              <div className="p-6 h-full flex flex-col justify-center items-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-blue-900"
-                  >
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </div>
-                <p className="text-lg font-medium text-center">
-                  Watch our campus tour preview
-                </p>
-              </div>
+              <video
+                src="/uwindsor-tour.mp4"
+                controls
+                autoPlay
+                muted
+                loop
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
         </div>
