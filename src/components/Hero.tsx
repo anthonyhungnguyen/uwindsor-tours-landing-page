@@ -54,12 +54,18 @@ export const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <button className="group relative px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full">
                 <span className="relative z-10 text-blue-900 font-bold">
-                  Start Exploring
+                  <a href="#features">Start Exploring</a>
                 </span>
                 <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </button>
               <button className="group relative px-8 py-3 border-2 border-white/30 rounded-full hover:border-white/50 transition-colors">
-                <span className="relative z-10">Watch Demo</span>
+                <a
+                  href="https://tonidevpro.itch.io/uwindsor-tour?secret=PWEZpLm790tlPgJxXSffQpbkIIk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="relative z-10">Watch Demo</span>
+                </a>
               </button>
             </div>
           </motion.div>
