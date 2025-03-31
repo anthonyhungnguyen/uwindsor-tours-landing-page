@@ -34,14 +34,15 @@ export const Team = () => {
 
   const teamMembers = [
     {
-      name: "Thieu Chuong",
-      role: "Lead Developer",
-      description: "Game architecture and core systems development.",
-      initials: "TC",
-      github: "https://github.com/ttchuong/",
-      linkedln: "https://www.linkedin.com/in/#/",
-      gradientFrom: "blue-400",
-      gradientTo: "blue-600",
+      name: "Thang Pham",
+      role: "Team Lead",
+      description:
+        "Crafting engaging gameplay mechanics and interactive experiences.",
+      initials: "TP",
+      github: "https://github.com/tonidevvn/",
+      linkedln: "https://www.linkedin.com/in/thangpham-1988-vn/",
+      gradientFrom: "red-400",
+      gradientTo: "red-600",
       delay: 0.2,
     },
     {
@@ -81,16 +82,15 @@ export const Team = () => {
       delay: 0.5,
     },
     {
-      name: "Thang Pham",
-      role: "Game Designer",
-      description:
-        "Crafting engaging gameplay mechanics and interactive experiences.",
-      initials: "TP",
-      github: "https://github.com/tonidevvn/",
-      linkedln: "https://www.linkedin.com/in/thangpham-1988-vn/",
-      gradientFrom: "red-400",
-      gradientTo: "red-600",
-      delay: 0.6,
+      name: "Thieu Chuong",
+      role: "Developer",
+      description: "Game architecture and core systems development.",
+      initials: "TC",
+      github: "https://github.com/ttchuong/",
+      linkedln: "https://www.linkedin.com/in/chuongtat/",
+      gradientFrom: "blue-400",
+      gradientTo: "blue-600",
+      delay: 0.2,
     },
   ];
 
