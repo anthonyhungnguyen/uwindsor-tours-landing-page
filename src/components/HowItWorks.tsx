@@ -140,7 +140,7 @@ export const HowItWorks = () => {
               >
                 <div
                   className={`md:w-1/2 ${
-                    index % 2 === 0 ? "md:text-right" : "md:text-left"
+                    index % 2 === 0 ? "md:text-right pe-8" : "md:text-left ps-8"
                   }`}
                 >
                   <div
@@ -163,7 +163,9 @@ export const HowItWorks = () => {
                 {/* Center circle with icon */}
                 <div className="relative z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center shadow-lg">
-                    <div className="text-blue-900">{step.icon}</div>
+                    <div className="text-blue-900 cursor-pointer hover:scale-110 transition-transform duration-300">
+                      {step.icon}
+                    </div>
                   </div>
                 </div>
 
@@ -181,7 +183,9 @@ export const HowItWorks = () => {
             className="mt-20 text-center"
           >
             <a
-              href="#"
+              href="https://tonidevpro.itch.io/uwindsor-tour?secret=PWEZpLm790tlPgJxXSffQpbkIIk"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-blue-900 font-medium text-lg rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
             >
               Start Your Virtual Tour Now

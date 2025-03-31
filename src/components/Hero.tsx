@@ -52,13 +52,13 @@ export const Hero = () => {
               before.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="group relative px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full">
+              <button className="group relative px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full cursor-pointer hover:from-yellow-500 hover:to-yellow-700 transition-colors">
                 <span className="relative z-10 text-blue-900 font-bold">
                   <a href="#features">Start Exploring</a>
                 </span>
                 <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </button>
-              <button className="group relative px-8 py-3 border-2 border-white/30 rounded-full hover:border-white/50 transition-colors">
+              <button className="group relative px-8 py-3 border-2 border-white/30 rounded-full hover:border-white/50 transition-colors cursor-pointer">
                 <a
                   href="https://tonidevpro.itch.io/uwindsor-tour?secret=PWEZpLm790tlPgJxXSffQpbkIIk"
                   target="_blank"

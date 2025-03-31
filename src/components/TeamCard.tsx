@@ -7,6 +7,8 @@ interface TeamCardProps {
   role: string;
   description: string;
   initials: string;
+  github: string;
+  linkedln: string;
   gradientFrom: string;
   gradientTo: string;
   delay?: number;
@@ -17,6 +19,8 @@ export const TeamCard = ({
   role,
   description,
   initials,
+  github,
+  linkedln,
   gradientFrom,
   gradientTo,
   delay = 0,
@@ -44,12 +48,13 @@ export const TeamCard = ({
           </div>
           <h3 className="font-display text-xl font-semibold mb-2">{name}</h3>
           <p className="text-yellow-400 font-display mb-3">{role}</p>
-          <p className="text-gray-300 text-center mb-4 font-sans">
+          <p className="text-gray-300 text-center mb-4 font-sans max-w-xs">
             {description}
           </p>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href={`${github}`}
+              target="_blank"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +62,8 @@ export const TeamCard = ({
               </svg>
             </a>
             <a
-              href="#"
+              href={`${linkedln}`}
+              target="_blank"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
